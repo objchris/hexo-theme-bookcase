@@ -1,0 +1,124 @@
+pre {
+
+	.hljs {
+
+	}
+
+	.hljs[lang] {
+		&:before {
+			color: color-code-lang;
+			content: attr(lang);
+		    position: absolute;
+		    font-size: 0.6rem;
+		    font-weight: 600;
+		    height: 15px;
+		    line-height: 15px;
+		    right: 0px;
+		    text-align: right;
+		    top: 0px;
+		    padding: 5px 10px 0px;
+		}
+	}
+
+	.hljs table,
+	.hljs tr,
+	.hljs td {
+		width: 100%;
+		border-collapse: collapse;
+		padding: 0;
+		margin: 0;
+	}
+	.hljs .gutter {
+		width: 1.5em;
+	}
+}
+
+.gutter pre {
+	color: #999;
+	margin-bottom: 0;
+	padding: 1.2em 0 1.2em 1.4em;
+	font-size: .9em
+}
+
+pre .hljs-function .hljs-keyword,
+pre .hljs-constant {
+	color: #0092db;
+}
+pre .hljs-keyword,
+pre .hljs-attribute {
+	color: #e96900;
+}
+pre .hljs-number,
+pre .hljs-literal {
+	color: #ae81ff;
+}
+pre .hljs-tag,
+pre .hljs-tag .hljs-title,
+pre .hljs-change,
+pre .hljs-winutils,
+pre .hljs-flow,
+pre .hljs-lisp .hljs-title,
+pre .hljs-clojure .hljs-built_in,
+pre .hljs-nginx .hljs-title,
+pre .hljs-tex .hljs-special {
+	color: #2973b7;
+}
+pre .hljs-class .hljs-title {
+	color: #fff;
+}
+pre .hljs-symbol,
+pre .hljs-symbol .hljs-string,
+pre .hljs-value,
+pre .hljs-regexp {
+	color: #42b983;
+}
+pre .hljs-title {
+	color: #a6e22e;
+}
+pre .hljs-tag .hljs-value,
+pre .hljs-string,
+pre .hljs-subst,
+pre .hljs-haskell .hljs-type,
+pre .hljs-preprocessor,
+pre .hljs-ruby .hljs-class .hljs-parent,
+pre .hljs-built_in,
+pre .hljs-sql .hljs-aggregate,
+pre .hljs-django .hljs-template_tag,
+pre .hljs-django .hljs-variable,
+pre .hljs-smalltalk .hljs-class,
+pre .hljs-javadoc,
+pre .hljs-django .hljs-filter .hljs-argument,
+pre .hljs-smalltalk .hljs-localvars,
+pre .hljs-smalltalk .hljs-array,
+pre .hljs-attr_selector,
+pre .hljs-pseudo,
+pre .hljs-addition,
+pre .hljs-stream,
+pre .hljs-envvar,
+pre .hljs-apache .hljs-tag,
+pre .hljs-apache .hljs-cbracket,
+pre .hljs-tex .hljs-command,
+pre .hljs-prompt {
+	color: #42b983;
+}
+pre .hljs-comment,
+pre .hljs-java .hljs-annotation,
+pre .hljs-python .hljs-decorator,
+pre .hljs-template_comment,
+pre .hljs-pi,
+pre .hljs-doctype,
+pre .hljs-deletion,
+pre .hljs-shebang,
+pre .hljs-apache .hljs-sqbracket,
+pre .hljs-tex .hljs-formula {
+	color: #b3b3b3;
+}
+pre .hljs-coffeescript .hljs-javascript,
+pre .hljs-javascript .hljs-xml,
+pre .hljs-tex .hljs-formula,
+pre .hljs-xml .hljs-javascript,
+pre .hljs-xml .hljs-vbscript,
+pre .hljs-xml .hljs-css,
+pre .hljs-xml .hljs-cdata {
+	opacity: 0.5;
+}

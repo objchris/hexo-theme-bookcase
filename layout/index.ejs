@@ -1,0 +1,13 @@
+<% 
+	var post;
+	site.tags.forEach(function(tag) {
+        if(tag.name == theme.indicate) {
+        	post = tag.posts.first();
+        }
+    });
+    if (post == undefined) {
+    	post = site.tags.first().posts.first();
+    }
+%>
+
+<%- partial('_partial/article', {post: post, index: true}) %>

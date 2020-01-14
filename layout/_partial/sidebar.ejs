@@ -1,0 +1,124 @@
+<% if (theme.search) { %>
+<div class="search">
+	<input type="text" autocomplete="off" class="search-input" id="local-search-input" placeholder="Search something..." /> 
+	<button id="search-input-close" class="search-input-close">
+		<i class="fa fa-times-circle" aria-hidden="true"></i>
+	</button>
+</div>
+<div id="search-content" class="search-content close">
+	<div class="search-result">
+	<div class="search-result-title" id="local-search-title">
+	    <h1>[(๑•̀ㅂ•́)و✧] 我找找..</h1>
+	</div>
+	<ul class="search-result-items" id="local-search-result">
+	    
+	</ul>
+	</div>
+</div>
+<% } %>
+
+<header>
+	<div class="title">
+		<span><%-config.title%></span>
+	</div>
+	<div class="tags-container">
+		<%
+		    var tags = [];
+		    var postTag = undefined;
+		    var index = 0;
+		    site.tags.forEach(function(tag) {
+		    	if(c_tag) {
+		    		if(c_tag == tag.name) {
+			    		// 用户点击tag或文章，c_tag的值不为空，且等于tag的值
+			    		postTag = tag;
+			    		if(tag.name == theme.indicate) {
+			    			tags.unshift('<a id="tag_highlight" class="tag highlight" href="' + url_for(tag.path) + '"><span class="tag_posts">'+ tag.posts.count() +'</span><span>' + tag.name + '</span></a>');
+			    		} else {
+			    			tags.push('<a id="tag_highlight" class="tag highlight" href="' + url_for(tag.path) + '"><span class="tag_posts">'+ tag.posts.count() +'</span><span>' + tag.name + '</span></a>');
+			    		}
+			    	} else {
+			    		if(tag.name == theme.indicate) {
+			    			tags.unshift('<a class="tag" href="' + url_for(tag.path) + '"><span class="tag_posts">'+ tag.posts.count() +'</span><span>' + tag.name + '</span></a>');
+			    		} else {
+			    			tags.push('<a class="tag" href="' + url_for(tag.path) + '"><span class="tag_posts">'+ tag.posts.count() +'</span><span>' + tag.name + '</span></a>');
+			    		}
+			    	}
+		    	} else {
+
+	    			if(tag.name == theme.indicate) {
+	    				postTag = tag;
+		    			tags.unshift('<a id="tag_highlight" class="tag highlight" href="' + url_for(tag.path) + '"><span class="tag_posts">'+ tag.posts.count() +'</span><span>' + tag.name + '</span></a>');
+		    		} else {
+		    			tags.push('<a class="tag" href="' + url_for(tag.path) + '"><span class="tag_posts">'+ tag.posts.count() +'</span><span>' + tag.name + '</span></a>');
+		    		}
+
+		    	}
+		    });
+		%>
+		<h2 class="tags-header">
+			<%
+				var text;
+				if(tags.length > 1) {
+					text = "books in total >>";
+				} else {
+					text = "book in total >>";
+				}
+			%>
+			<%- tags.length %> <%-text%>
+		</h2>
+		<div id="tags_container" class="tags">
+			<%- tags.join(' ') %>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div id="posts_container" class="posts">
+		<div class="nav">
+
+			<%
+			    var posts = [];
+			    if(postTag) {
+			    	var index = 0;
+			    	var post_sorted = postTag.posts.sort('-date');
+				    post_sorted.forEach(function(post){
+				    	if(c_title) {
+				    		// 用户点击文章
+				    		if(c_title == post.title) {
+				    			posts.push('<a id="post_highlight"  class="post-title highlight" href="' + url_for(post.path) + '"> '+ post.title +'</a>');
+				    		} else {
+				    			posts.push('<a class="post-title" href="' + url_for(post.path) + '"> '+ post.title +'</a>');
+				    		}
+				    	} else {
+				    		// 用户点击Tag
+				    		if(index == 0) {
+								posts.push('<a class="post-title highlight" href="' + url_for(post.path) + '"> '+ post.title +'</a>');
+							} else {
+								posts.push('<a class="post-title" href="' + url_for(post.path) + '"> '+ post.title +'</a>');
+							}
+					        index++;
+				    	}
+				    });
+				} else {
+					//首页
+					var index = 0;
+					var post_sorted = site.posts.sort('-date');
+					post_sorted.forEach(function(post){
+						if(index == 0) {
+							posts.push('<a class="post-title highlight" href="' + url_for(post.path) + '"> '+ post.title +'</a>');
+						} else {
+							posts.push('<a class="post-title" href="' + url_for(post.path) + '"> '+ post.title +'</a>');
+						}
+				        index++;
+				    });
+				}
+			%>
+			<%- posts.join(' ') %>
+
+		</div>
+	</div>
+</section>
+
+<footer>
+	<p>© <%=(new Date()).getFullYear()%> • <a href="<%=url_for(theme.root) %>"><%=config.author%></a></p>
+</footer>

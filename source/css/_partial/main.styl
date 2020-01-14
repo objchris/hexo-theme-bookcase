@@ -1,0 +1,225 @@
+#container{
+	position:relative;
+	min-height:100%;
+
+	.sidebar {
+		width: 300px;
+		border-right: 1px solid var(--color-border);
+		position:fixed;
+		top:0;
+		opacity:1;
+		transition:all .25s ease-out;
+		height:100%;
+
+		header {
+			font-family:font-sidebar-header;
+		}
+
+		section {
+			position: absolute;
+		    sectionTop(search);
+		    width: 100%;
+		    bottom: 60px;
+		    font-family:font-normal-text;
+		}
+
+		footer {
+			font-family:font-sidebar-header;
+			text-align:center;
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+    		height: 40px;
+			p {
+				font-size: 0.85rem;
+    			margin: 0.25rem 0px 0px;
+			}
+			a {
+				border-bottom: 1px dotted;
+			}
+			z-index:40;
+		}
+	}
+
+	.sidebar header .title {
+		font-size: 1.5rem;
+		margin: 1.5rem 1rem 0.5rem;
+		text-align: center;
+		border-radius: 6px;
+		span {
+            margin: 1rem 1rem;
+		}
+	}
+
+	.sidebar header .tags-container {
+		background-color: var(--color-container-bg);
+		margin: 1rem 1rem;
+		border-radius: 6px;
+		text-align:center;
+		.tags-header {
+			text-align: right;
+			padding: 1em 1em 0;
+		}
+
+		.tags {
+			margin: .5rem 1rem;
+			display: flex;
+			overflow-x: scroll;
+			&::-webkit-scrollbar {
+				display:none;
+			}
+
+			.tag {
+				position: relative;
+			    padding: 1rem 0 1.25rem;
+				min-width: 34%;
+			    border-radius: 6px;
+			    color: var(--color-text);
+			    span {
+			    	display: block;
+					margin: 0 .5rem;
+					&:first-child {
+					    margin-bottom: .5rem;
+					    font-size: 1.2rem;
+					}
+					&:last-child {
+					    font-size: 0.75rem;
+					    opacity: 0.63;
+					}
+			    }
+
+			    &:hover::after
+			    &:focus::after
+			    &:active::after {
+			    	transform: scaleX(1);
+			    }
+
+			    &.highlight {
+					&:after {
+						transform: scaleX(1);
+					}
+				}
+
+			    &:after {
+			    	background-color:var(--color-text);
+			    	position: absolute;
+				    right: 0px;
+				    bottom: 0px;
+				    left: 0px;
+				    width: 32%;
+				    height: 0.2rem;
+				    content: "";
+				    transform: scaleY(0);
+				    transform-origin: center bottom;
+				    margin: auto;
+				    transition: transform 0.4s ease 0s;
+				    border-radius: 3px 3px 0px 0px;
+			    }
+			}
+		}
+	}
+
+
+	.sidebar section .posts {
+		overflow-x:hidden;
+		overflow-y:auto;
+		height:100%;
+		width: 320px;
+		&::-webkit-scrollbar {
+			display:none;
+		}
+
+		.nav {
+    		-webkit-tap-highlight-color: transparent;
+    		user-select: none;
+			width: 300px;
+			a.post-title {
+				color:var(--color-text);
+				font-weight: 900;
+				position: relative;
+			    display: block;
+			    padding-right: 2rem;
+			    text-align: right;
+			    text-transform: capitalize;
+			    line-height: 3rem;
+			    border-color: inherit;
+			    transition: all .15s;
+
+			    &:hover {
+			    	color:var(--color-link);
+			    	font-size: 1.168rem;
+			    	&:after {
+			    		background-color:var(--color-link);
+			    	}
+			    }
+
+			    &.highlight {
+			    	color:var(--color-link);
+					font-size: 1.168rem;
+			    	&:after {
+			    		background-color:var(--color-link);
+			    	}
+				}
+
+			    &:after {
+			    	position: absolute;
+				    top: 50%;
+				    right: 0;
+				    width: 7px;
+				    height: 7px;
+				    border-radius: 50%;
+				    content: "";
+				    box-shadow:0 0 0 1px var(--color-border);
+				    background:var(--color-border);
+				    transform: translate(50%,-50%);
+			    }
+			}
+		}
+	}
+
+	.content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 300px;
+    	transition: left .25s ease;
+	}
+
+	.sidebar-toggle {
+		background-color: transparent;
+    	border: 0;
+    	outline: none;
+    	padding: 10px;
+    	position: fixed;
+    	bottom: 5px;
+    	text-align: center;
+    	transition: opacity .3s;
+    	z-index:50;
+	}
+
+	.sidebar-toggle span {
+	    background-color: var(--color-link);
+	    display: block;
+	    margin-bottom: 4px;
+	    width: 16px;
+	    height: 2px;
+	}
+
+}
+
+
+#container.close .sidebar {
+	transform: translateX(-320px);
+}
+
+#container.close .content {
+	left: 0;
+}
+
+
+@media screen and (max-width:768px) {
+	@import "mobile"
+}

@@ -1,0 +1,39 @@
+#container {
+	
+	.sidebar {
+	    left: -320px;
+	    transition: transform .25s ease-out;
+	}
+
+	main {
+	    height: auto;
+	    overflow-x: hidden;
+	}
+
+	.content {
+	    left: 0;
+	    max-width: 100vw;
+	    position: static;
+	    padding-top: 20px;
+	    transition: transform .25s ease;
+	}
+
+	.sidebar-toggle {
+		width: 100%;
+    	background-color: #ffffffb3;
+	}
+
+}
+
+#container.close .sidebar {
+	transform: translateX(320px);
+}
+
+#container.close .content {
+	transform: translateX(320px);
+}
+
+#container.close .sidebar-toggle {
+	width: auto;
+	background-color: transparent;
+}

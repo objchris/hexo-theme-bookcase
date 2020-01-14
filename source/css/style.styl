@@ -1,0 +1,80 @@
+@import "_variables"
+
+html, body, #container {
+  height: 100%;
+}
+
+body {
+  background: var(--color-background);
+  font-family: font-normal-text;
+  font-size: font-size;
+  color: var(--color-text);
+  -webkit-overflow-scrolling: touch
+  overflow-x:hidden;
+  margin:0;
+}
+
+h1,h2,h3{
+  display: block;
+}
+h1 {
+  font-size:1.5em
+}
+h2 {
+  font-size:1.3em
+}
+h3 {
+  font-size:1.1em
+}
+h4,h5,h6{
+  font-size:1em
+}
+
+ol{
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+a {
+  color:var(--color-link);
+  text-decoration:none;
+  outline-width:0;
+  outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .8;
+    transition: opacity .5s ease-in-out;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+
+}
+
+table>tbody>tr>td, table>tbody>tr>th, table>tfoot>tr>td, table>tfoot>tr>th, table>thead>tr>td, table>thead>tr>th {
+    padding: 12px 7px;
+    vertical-align: middle;
+    border-top: 1px solid var(--color-border);
+}
+
+
+@import "_partial/main"
+@import "_Partial/search"
+@import "_partial/article"
+@import "_partial/highlight"

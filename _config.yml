@@ -1,0 +1,8 @@
+# Header
+root: "https://objchris.com"
+
+# The tag you want to show when user enter you website
+indicate: "index"
+
+# use search function
+search: true

@@ -1,0 +1,50 @@
+// Config
+support-for-ie = false
+vendor-prefixes = webkit moz ms official
+
+// Colors
+:root {
+	--color-text:								#34495e;
+	--color-background:							#fff;
+	--color-sidebar-text:						#34495e;
+	--color-link:								#42b983;
+	--color-border:								#e0e0e0;
+	--color-code:								#e96900;
+	--color-code-in-container:					#525252;
+	--color-code-lang:							#ccc;
+	--color-container-bg:						#fafafa;
+	--color-search-result-keyword:				#e96900;
+	--color-search-result-match-content:		#808080;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root{
+		--color-text:							#c8c8c8;
+		--color-background:						#323336;
+		--color-sidebar-text:					#c8c8c8;
+		--color-link:							#e96900;
+		--color-border:							#4c4a4a;
+		--color-code:							#efefef;
+		--color-code-in-container:				#efefef;
+		--color-code-lang:						#ccc;
+		--color-container-bg:					#282828;
+		--color-search-result-keyword:			#e96900;
+		--color-search-result-match-content:	#808080;
+	}
+}
+
+// Fonts
+font-sidebar-header = "Josefin Sans", "Noto Sans SC", "PingFang SC", sans-serif
+font-code = "Roboto Mono", "Monaco", "courier", "monospace"
+font-normal-text = "Source Sans Pro", "Helvetica Neue", "Arial", sans-serif
+
+search = hexo-config("search")
+
+// Function
+sectionTop(needSearch) {
+	if needSearch {
+		top: 260px;
+	} else {
+		top: 220px;
+	}
+}
