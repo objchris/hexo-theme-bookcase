@@ -1,12 +1,10 @@
 # BOOKCASE
----
-
 ![](https://img.shields.io/badge/Release-v1.0.0-green.svg?style=flat)
 ![](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
 
 📚 A clean, Gitbook style theme for HEXO. 
 
----
+
 ## Summary
 - Preview
 - Features
@@ -15,14 +13,13 @@
 - License
 
 ## Preview
-- [demo]()
-- [objchris/tech]()
+- [demo](http://objchris.com/hexo-theme-bookcase/)
 
 ## Feature
 - Gitbook style
 - Mutil Device
 - Dark mode
-- Search
+- Search By [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
 ## Quick start
 1. go inside hexo dir
