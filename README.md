@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
 
 📚 A clean, Gitbook style theme for HEXO. 
-
+[中文文档](https://objchris.com/hexo-theme-bookcase/doc/get-start-chinese/)
 
 ## Summary
 - Preview
@@ -17,7 +17,7 @@
 
 ## Feature
 - Gitbook style
-- Mutil Device
+- Mutil Platform
 - Dark mode
 - Search By [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
@@ -34,7 +34,7 @@ git clone https://github.com/objchris/hexo-theme-bookcase themes/bookcase
 ``` 
 theme: bookcase
 ```
-4. configure the theme
+4. [configure the theme](https://objchris.com/hexo-theme-bookcase/doc/using-advice/)
 
 ## ChangeLog
 ### 2020-01-14
