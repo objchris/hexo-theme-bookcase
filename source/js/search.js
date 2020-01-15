@@ -100,8 +100,8 @@ var searchFunc = function(path) {
 }
 
 function init() {
-    
-    var path = "/search.xml";
+
+    var path = document.getElementById("local-search-path").value;
     searchFunc(path);
 
     var input = document.getElementById("local-search-input");
