@@ -56,7 +56,7 @@
 			3 books in total >>
 		</h2>
 		<div id="tags_container" class="tags">
-			<a id="tag_highlight" class="tag highlight" href="/hexo-theme-bookcase/tags/index/"><span class="tag_posts">1</span><span>index</span></a> <a class="tag" href="/hexo-theme-bookcase/tags/test/"><span class="tag_posts">3</span><span>test</span></a> <a class="tag" href="/hexo-theme-bookcase/tags/doc/"><span class="tag_posts">3</span><span>doc</span></a>
+			<a class="tag" href="/hexo-theme-bookcase/tags/index/"><span class="tag_posts">1</span><span>index</span></a> <a class="tag" href="/hexo-theme-bookcase/tags/test/"><span class="tag_posts">3</span><span>test</span></a> <a id="tag_highlight" class="tag highlight" href="/hexo-theme-bookcase/tags/doc/"><span class="tag_posts">3</span><span>doc</span></a>
 		</div>
 	</div>
 </header>
@@ -66,7 +66,7 @@
 		<div class="nav">
 
 			
-			<a class="post-title highlight" href="/hexo-theme-bookcase/welcome/"> WelCome To Bookcase</a>
+			<a id="post_highlight"  class="post-title highlight" href="/hexo-theme-bookcase/doc/using-advice-chinese/"> 使用文档</a> <a class="post-title" href="/hexo-theme-bookcase/doc/using-advice/"> Document</a> <a class="post-title" href="/hexo-theme-bookcase/doc/get-start-chinese/"> 开始</a>
 
 		</div>
 	</div>
@@ -79,13 +79,25 @@
 
     <main>
       <div class="content">
-        
-
-<article class="markdown-section">
-  <h1>WelCome To Bookcase</h1>
-  <p>I am so glad you are here. 🥳🥳</p>
-<h2 id="Bookcase-Config"><a href="#Bookcase-Config" class="headerlink" title="Bookcase Config"></a>Bookcase Config</h2><p><a href="../../doc/using-advice">doc</a><br><a href="../../doc/using-advice-chinese">文档</a></p>
-<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p><a href="../../test/markdown">markdown test</a><br><a href="../../test/en-test">en test</a><br><a href="../../test/cn-test">cn test</a></p>
+        <article class="markdown-section">
+  <h1>使用文档</h1>
+  <h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>BOOKCASE 有主题配置文件，其中有三项内容：</p>
+<ul>
+<li>root</li>
+<li>indicate</li>
+<li>search</li>
+</ul>
+<h3 id="root"><a href="#root" class="headerlink" title="root"></a>root</h3><p>指代左侧导航栏下方，作者名称对应的超链接</p>
+<h3 id="indicate"><a href="#indicate" class="headerlink" title="indicate"></a>indicate</h3><p>读者首次进入网站后展示的第一个标签，该标签必须有对应的文章指定。若不指定，则读者首次进入网站时可以看到所有的文章</p>
+<h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>是否开启站内搜索功能，当前的站内搜索功能集成的是 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a>。开启前请先按照 hexo-generator-search 进行配置</p>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><ul>
+<li>标签的置顶文章（将时间调整至100年后）做成这个标签所有文章的一个目录，这样做是为了使用手机的用户着想，因为在手机上操作，点击标签跳转到新页面默认是看不到文章列表的，此时有了目录，读者可以直接通过目录查看当前标签下有什么文章，自然就舒服多了。</li>
+</ul>
+<h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul>
+<li>About 页面，用于展示个人信息</li>
+<li>评论</li>
+<li>国际化</li>
+</ul>
 
 </article>
       </div>
