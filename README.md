@@ -18,6 +18,7 @@
 ## Feature
 - Gitbook style
 - Mutil Platform
+- Multilevel classification
 - Dark mode
 - Search By [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
@@ -37,6 +38,8 @@ theme: bookcase
 4. [configure the theme](https://objchris.com/hexo-theme-bookcase/doc/using-advice/)
 
 ## ChangeLog
+### 2020-01-16
+Support multilevel classification in left sidebar
 ### 2020-01-14
 first version
 

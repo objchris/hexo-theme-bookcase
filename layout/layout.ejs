@@ -15,15 +15,17 @@
 
     <aside class="sidebar">
     <%
-    	var current_tag = page.tag;
-      var current_post_title = page.title;
-    	if(!current_tag) {
-    		if(page.tags) {
-    			current_tag = page.tags.first().name;
-    		}
-    	}
+      var current_category;
+      var current_post_title;
+      if (page.categories) {
+        current_category = page.categories.first();
+        current_post_title = page.title;
+      } else {
+        current_category = site.categories.first();
+        current_post_title = current_category.posts.first().title;
+      }
     %>
-    <%- partial('_partial/sidebar', {c_tag: current_tag, c_title: current_post_title}) %>
+    <%- partial('_partial/sidebar', {current_category: current_category, current_title: current_post_title}) %>
     </aside>
 
     <main>

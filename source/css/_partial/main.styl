@@ -51,17 +51,17 @@
 		}
 	}
 
-	.sidebar header .tags-container {
+	.sidebar header .categories-container {
 		background-color: var(--color-container-bg);
 		margin: 1rem 1rem;
 		border-radius: 6px;
 		text-align:center;
-		.tags-header {
+		.categories-header {
 			text-align: right;
 			padding: 1em 1em 0;
 		}
 
-		.tags {
+		.categories {
 			margin: .5rem 1rem;
 			display: flex;
 			overflow-x: scroll;
@@ -69,7 +69,7 @@
 				display:none;
 			}
 
-			.tag {
+			.category {
 				position: relative;
 			    padding: 1rem 0 1.25rem;
 				min-width: 34%;
@@ -124,7 +124,6 @@
 		overflow-x:hidden;
 		overflow-y:auto;
 		height:100%;
-		width: 320px;
 		&::-webkit-scrollbar {
 			display:none;
 		}
@@ -132,16 +131,20 @@
 		.nav {
     		-webkit-tap-highlight-color: transparent;
     		user-select: none;
-			width: 300px;
+    		.sub-category {
+				margin: .618rem 0 .618rem 1rem;
+    			text-transform: capitalize;
+    			font-size: 15px;
+    			font-weight: 700;
+    		}
+
 			a.post-title {
 				color:var(--color-text);
-				font-weight: 900;
 				position: relative;
 			    display: block;
-			    padding-right: 2rem;
-			    text-align: right;
+			    margin: 0 0 0 2rem;
 			    text-transform: capitalize;
-			    line-height: 3rem;
+			    line-height: 2.618rem;
 			    border-color: inherit;
 			    transition: all .15s;
 

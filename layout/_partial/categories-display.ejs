@@ -1,0 +1,41 @@
+<%
+function displayAllTopCategories() {
+	var topCategories = [];
+	site.categories.sort('name').each(function(category) {
+		// init topCategories
+	    if (category.parent == undefined) {
+	    	if (category.name == theme.indicate) {
+	    		topCategories.unshift(category);
+	    	} else {
+	    		topCategories.push(category);
+	    	}
+	    }
+	});
+    // create category content
+    var html = '';
+    html += '<div class="categories-container">';
+    html += '<h2 class="categories-header">';
+    var text;
+	if(topCategories.length > 1) {
+		text = " books in total >>";
+	} else {
+		text = " book in total >>";
+	}
+	html += topCategories.length + text;
+    html += '</h2>';
+    html += '<div id="tags_container" class="categories">';
+    topCategories.forEach(function(cate) {
+    	var firstPost = cate.posts.first();
+    	if (cate._id == current_category._id) {
+    		html += '<a id="tag_highlight" class="category highlight" href="' + url_for(firstPost.path) + '"><span>'+ cate.posts.count() +'</span><span>' + cate.name + '</span></a>';
+    	} else {
+    		html += '<a class="category" href="' + url_for(firstPost.path) + '"><span>'+ cate.posts.count() +'</span><span>' + cate.name + '</span></a>';
+    	}
+    });
+    html += '</div>'; // categories
+    html += '</div>'; // categories-container
+    return html;
+}
+%>
+
+<%-displayAllTopCategories() %>

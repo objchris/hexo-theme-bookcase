@@ -1,0 +1,31 @@
+<%
+function displayCategoriesAndPosts(category, depth) {
+    // get its posts
+    var posts = category.posts;
+    // get its child categories
+    var childCategories = site.categories.find({'parent': category._id});
+
+    var html = '';
+    posts.sort('date', 'desc').forEach(function(post) {
+    	if (post.categories.length != depth) {
+    		return false;
+    	}
+    	if (post.title == current_title) {
+    		html += '<a id="post_highlight" class="post-title highlight" href="' + url_for(post.path) + '"> '+ post.title +'</a>';
+    	} else {
+    		html += '<a class="post-title" href="' + url_for(post.path) + '"> '+ post.title +'</a>';
+    	}
+    });
+
+    if (childCategories.length > 0) {
+        // recursive iteration on its child categories
+        childCategories.sort('name', 'asc').forEach(function(childCategory) {
+        	html += '<p class="sub-category">'+ childCategory.name +'</p>';
+            html += displayCategoriesAndPosts(childCategory, depth + 1);
+        });
+    }
+    return html;
+}
+%>
+
+<%-displayCategoriesAndPosts(current_category, 1) %>
