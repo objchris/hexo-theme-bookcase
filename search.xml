@@ -8,15 +8,97 @@
       <link href="/hexo-theme-bookcase/welcome/"/>
       <url>/hexo-theme-bookcase/welcome/</url>
       
-        <content type="html"><![CDATA[<p>I am so glad you are here. 🥳🥳</p><h2 id="Bookcase-Config"><a href="#Bookcase-Config" class="headerlink" title="Bookcase Config"></a>Bookcase Config</h2><p><a href="../../doc/using-advice">doc</a><br><a href="../../doc/using-advice-chinese">文档</a></p><h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p><a href="../../test/markdown">markdown test</a><br><a href="../../test/en-test">en test</a><br><a href="../../test/cn-test">cn test</a></p>]]></content>
+        <content type="html"><![CDATA[<p>I am so glad you are here. 🥳🥳</p><h2 id="Bookcase-Config"><a href="#Bookcase-Config" class="headerlink" title="Bookcase Config"></a>Bookcase Config</h2><ul><li><a href="/hexo-theme-bookcase/doc/using-advice">doc</a></li><li><a href="/hexo-theme-bookcase//doc/using-advice-chinese">文档</a></li></ul><h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><ul><li><a href="/hexo-theme-bookcase/test/markdown">Elements showcase</a></li><li><a href="/hexo-theme-bookcase/test/en-test">English test</a></li><li><a href="/hexo-theme-bookcase/test/cn-test">繁体字测试</a></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> index </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> index </tag>
-            
-        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用文档</title>
+      <link href="/hexo-theme-bookcase/doc/using-advice-chinese/"/>
+      <url>/hexo-theme-bookcase/doc/using-advice-chinese/</url>
+      
+        <content type="html"><![CDATA[<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>使用 BOOKCASE ，必须确保每篇文章都有所属的分类，如：</p><pre><code>---title: 使用文档date: 2020-01-14 11:37:39categories:- doc- 中文---</code></pre><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>BOOKCASE 有主题配置文件，其中有三项内容：</p><ul><li>root</li><li>indicate</li><li>search</li></ul><h3 id="root"><a href="#root" class="headerlink" title="root"></a>root</h3><p>指代左侧导航栏下方，作者名称对应的超链接</p><h3 id="indicate"><a href="#indicate" class="headerlink" title="indicate"></a>indicate</h3><p>读者首次进入网站后展示的第一个标签，该标签必须有对应的文章指定。若不指定，则读者首次进入网站时可以看到所有的文章</p><h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>是否开启站内搜索功能，当前的站内搜索功能集成的是 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a>。开启前请先按照 hexo-generator-search 进行配置</p><h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><ul><li>标签的置顶文章（将时间调整至100年后）做成这个标签所有文章的一个目录，这样做是为了使用手机的用户着想，因为在手机上操作，点击标签跳转到新页面默认是看不到文章列表的，此时有了目录，读者可以直接通过目录查看当前标签下有什么文章，自然就舒服多了。</li></ul><h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul><li>About 页面，用于展示个人信息</li><li>评论</li><li>国际化</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> doc </category>
+          
+          <category> 中文 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开始</title>
+      <link href="/hexo-theme-bookcase/doc/get-start-chinese/"/>
+      <url>/hexo-theme-bookcase/doc/get-start-chinese/</url>
+      
+        <content type="html"><![CDATA[<p>BOOKCASE 是一个简洁，Gitbook 风格的 Hexo 主题</p><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><ul><li>Preview</li><li>Features</li><li>Quick start</li><li>ChangeLog</li><li>License</li></ul><h2 id="Preview"><a href="#Preview" class="headerlink" title="Preview"></a>Preview</h2><ul><li><a href="http://objchris.com/hexo-theme-bookcase/">demo</a></li></ul><h2 id="Feature"><a href="#Feature" class="headerlink" title="Feature"></a>Feature</h2><ul><li>Gitbook 风格</li><li>适配 PC 和移动设备界面</li><li>暗夜模式</li><li>多级分类</li><li>站内搜索功能 By <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a></li></ul><h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2><ol><li>进入到 Hexo 的目录<pre><code class="bash" lang="bash">cd &lt;your_blog_dir&gt;</code></pre></li><li>从 Github 上 clone BOOKCASE<pre><code class="bash" lang="bash">git clone https://github.com/objchris/hexo-theme-bookcase themes/bookcase</code></pre></li><li>修改根路径下的 <code>_config.yml</code> ，将主题改为 bookcase<pre><code>theme: bookcase</code></pre></li><li>按照<a href="../using-advice-chinese">文档</a>配置主题</li></ol><h2 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h2><h3 id="2020-01-16"><a href="#2020-01-16" class="headerlink" title="2020-01-16"></a>2020-01-16</h3><p>在左侧导航栏添加多级分类</p><h3 id="2020-01-14"><a href="#2020-01-14" class="headerlink" title="2020-01-14"></a>2020-01-14</h3><p>第一个版本</p><h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p><a href="https://github.com/objchris/hexo-theme-bookcase/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a>.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> doc </category>
+          
+          <category> 中文 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Document</title>
+      <link href="/hexo-theme-bookcase/doc/using-advice/"/>
+      <url>/hexo-theme-bookcase/doc/using-advice/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Pay-attention"><a href="#Pay-attention" class="headerlink" title="Pay attention"></a>Pay attention</h2><p>With BOOKCASE, you must ensure that each article belongs to a category, such as:</p><pre><code>---title: Documentdate: 2020-01-14 11:37:39categories:- doc- English---</code></pre><h2 id="bookcase-config-yml"><a href="#bookcase-config-yml" class="headerlink" title="bookcase/_config.yml"></a>bookcase/_config.yml</h2><p>There are 3 config items in <code>bookcase/_config.yml</code>：</p><ul><li>root</li><li>indicate</li><li>search</li></ul><h3 id="root"><a href="#root" class="headerlink" title="root"></a>root</h3><p>the link of the author name at the bottom of sidebar.</p><h3 id="indicate"><a href="#indicate" class="headerlink" title="indicate"></a>indicate</h3><p>The first tag displayed by readers after entering the site for the first time, the tag must be specified by the corresponding article. Without configuration, readers can see all articles when they first enter the website.</p><h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>Whether to enable the site search function. The current site search function is integrated with <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a>. Please configure according to <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> before getting start.</p><h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul><li>About page</li><li>Comment</li><li>i18n</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> doc </category>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Elements showcase</title>
+      <link href="/hexo-theme-bookcase/test/markdown/"/>
+      <url>/hexo-theme-bookcase/test/markdown/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Heading-Style"><a href="#Heading-Style" class="headerlink" title="Heading Style"></a>Heading Style</h2><h1 id="h1-Heading"><a href="#h1-Heading" class="headerlink" title="h1 Heading"></a>h1 Heading</h1><h2 id="h2-Heading"><a href="#h2-Heading" class="headerlink" title="h2 Heading"></a>h2 Heading</h2><h3 id="h3-Heading"><a href="#h3-Heading" class="headerlink" title="h3 Heading"></a>h3 Heading</h3><h4 id="h4-Heading"><a href="#h4-Heading" class="headerlink" title="h4 Heading"></a>h4 Heading</h4><h5 id="h5-Heading"><a href="#h5-Heading" class="headerlink" title="h5 Heading"></a>h5 Heading</h5><h6 id="h6-Heading"><a href="#h6-Heading" class="headerlink" title="h6 Heading"></a>h6 Heading</h6><h2 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h2><hr><hr><hr><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><p><strong>This is bold text</strong></p><p><strong>This is bold text</strong></p><p><em>This is italic text</em></p><p><em>This is italic text</em></p><p><del>Strikethrough</del></p><h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote><p>Blockquotes can also be nested…</p><blockquote><p>…by using additional greater-than signs right next to each other…</p><blockquote><p>…or with spaces between arrows.</p></blockquote></blockquote></blockquote><h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><p>Unordered</p><ul><li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li><li>Sub-lists are made by indenting 2 spaces:<ul><li>Marker character change forces new list start:<ul><li>Ac tristique libero volutpat at</li></ul><ul><li>Facilisis in pretium nisl aliquet</li></ul><ul><li>Nulla volutpat aliquam velit</li></ul></li></ul></li><li>Very easy!</li></ul><p>Ordered</p><ol><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit</li><li>Integer molestie lorem at massa</li></ol><ol><li>You can use sequential numbers…</li><li>…or keep all the numbers as <code>1.</code></li></ol><p>Start numbering with offset:</p><ol start="57"><li>foo</li><li>bar</li></ol><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Inline <code>code</code></p><p>Indented code</p><pre><code>// Some commentsline 1 of codeline 2 of codeline 3 of code</code></pre><p>Block code “fences”</p><pre><code>Sample text here...</code></pre><p>Syntax highlighting</p><pre><code class="js" lang="js">var foo = function (bar) {  return bar++;};console.log(foo(5));</code></pre><pre><code class="html" lang="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;</code></pre><pre><code class="objc" lang="objc">[[NSString alloc] initWithFormat:@&quot;I am No.%d&quot;, 1];</code></pre><h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>path to data files to supply the data that will be passed into templates.</td></tr><tr><td>engine</td><td>engine to be used for processing templates. Handlebars is the default.</td></tr><tr><td>ext</td><td>extension to be used for dest files.</td></tr></tbody></table><p>Right aligned columns</p><table><thead><tr><th align="right">Option</th><th align="right">Description</th></tr></thead><tbody><tr><td align="right">data</td><td align="right">path to data files to supply the data that will be passed into templates.</td></tr><tr><td align="right">engine</td><td align="right">engine to be used for processing templates. Handlebars is the default.</td></tr><tr><td align="right">ext</td><td align="right">extension to be used for dest files.</td></tr></tbody></table><h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><a href="https://github.com/objchris/hexo-theme-bookcase" target="_blank" rel="noopener">BOOKCASE</a></p><h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><p><img src="https://octodex.github.com/images/minion.png" alt="Minion"><br><img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat"></p><p>Like links, Images also have a footnote style syntax</p><p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p><p>With a reference later in the document defining the URL location:</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -30,88 +112,14 @@
         <content type="html"><![CDATA[<p>項脊軒，舊南閣子也。室僅方丈，可容一人居。百年老屋，塵泥滲漉，雨澤下注；每移案，顧視，無可置者。又北向，不能得日，日過午已昏。餘稍爲修葺，使不上漏。前闢四窗，垣牆周庭，以當南日，日影反照，室始洞然。又雜植蘭桂竹木於庭，舊時欄楯，亦遂增勝。借書滿架，偃仰嘯歌，冥然兀坐，萬籟有聲；而庭堦寂寂，小鳥時來啄食，人至不去。三五之夜，明月半牆，桂影斑駁，風移影動，珊珊可愛。</p><p>然餘居於此，多可喜，亦多可悲。先是庭中通南北爲一。迨諸父異爨，內外多置小門，牆往往而是。東犬西吠，客逾庖而宴，雞棲於廳。庭中始爲籬，已爲牆，凡再變矣。家有老嫗，嘗居於此。嫗，先大母婢也，乳二世，先妣撫之甚厚。室西連於中閨，先妣嘗一至。嫗每謂餘曰：” 某所，而母立於茲。” 嫗又曰：” 汝姊在吾懷，呱呱而泣；娘以指叩門扉曰：‘兒寒乎？欲食乎？’吾從板外相爲應答。” </p><p>語未畢，餘泣，嫗亦泣。餘自束髮，讀書軒中，一日，大母過餘曰：” 吾兒，久不見若影，何竟日默默在此，大類女郎也？” 比去，以手闔門，自語曰：” 吾家讀書久不效，兒之成，則可待乎！” 頃之，持一象笏至，曰：” 此吾祖太常公宣德間執此以朝，他日汝當用之！” 瞻顧遺蹟，如在昨日，令人長號不自禁。</p><p>軒東，故嘗爲廚，人往，從軒前過。餘扃牖而居，久之，能以足音辨人。軒凡四遭火，得不焚，殆有神護者。</p><p>項脊生曰：“蜀清守丹穴，利甲天下，其後秦皇帝築女懷清檯；劉玄德與曹操爭天下，諸葛孔明起隴中。方二人之昧昧於一隅也，世何足以知之，餘區區處敗屋中，方揚眉、瞬目，謂有奇景。人知之者，其謂與坎井之蛙何異？”<br>餘既爲此志，後五年，吾妻來歸，時至軒中，從餘問古事，或憑几學書。吾妻歸寧，述諸小妹語曰：” 聞姊家有閣子，且何謂閣子也？” </p><p>其後六年，吾妻死，室壞不修。其後二年，餘久臥病無聊，乃使人復葺南閣子，其制稍異於前。然自後餘多在外，不常居。</p><p>庭有枇杷樹，吾妻死之年所手植也，今已亭亭如蓋矣。</p>]]></content>
       
       
+      <categories>
+          
+          <category> test </category>
+          
+          <category> language </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> test </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Markdown Style Demo</title>
-      <link href="/hexo-theme-bookcase/test/markdown/"/>
-      <url>/hexo-theme-bookcase/test/markdown/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Heading-Style"><a href="#Heading-Style" class="headerlink" title="Heading Style"></a>Heading Style</h2><h1 id="h1-Heading"><a href="#h1-Heading" class="headerlink" title="h1 Heading"></a>h1 Heading</h1><h2 id="h2-Heading"><a href="#h2-Heading" class="headerlink" title="h2 Heading"></a>h2 Heading</h2><h3 id="h3-Heading"><a href="#h3-Heading" class="headerlink" title="h3 Heading"></a>h3 Heading</h3><h4 id="h4-Heading"><a href="#h4-Heading" class="headerlink" title="h4 Heading"></a>h4 Heading</h4><h5 id="h5-Heading"><a href="#h5-Heading" class="headerlink" title="h5 Heading"></a>h5 Heading</h5><h6 id="h6-Heading"><a href="#h6-Heading" class="headerlink" title="h6 Heading"></a>h6 Heading</h6><h2 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h2><hr><hr><hr><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><p><strong>This is bold text</strong></p><p><strong>This is bold text</strong></p><p><em>This is italic text</em></p><p><em>This is italic text</em></p><p><del>Strikethrough</del></p><h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote><p>Blockquotes can also be nested…</p><blockquote><p>…by using additional greater-than signs right next to each other…</p><blockquote><p>…or with spaces between arrows.</p></blockquote></blockquote></blockquote><h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><p>Unordered</p><ul><li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li><li>Sub-lists are made by indenting 2 spaces:<ul><li>Marker character change forces new list start:<ul><li>Ac tristique libero volutpat at</li></ul><ul><li>Facilisis in pretium nisl aliquet</li></ul><ul><li>Nulla volutpat aliquam velit</li></ul></li></ul></li><li>Very easy!</li></ul><p>Ordered</p><ol><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit</li><li>Integer molestie lorem at massa</li></ol><ol><li>You can use sequential numbers…</li><li>…or keep all the numbers as <code>1.</code></li></ol><p>Start numbering with offset:</p><ol start="57"><li>foo</li><li>bar</li></ol><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Inline <code>code</code></p><p>Indented code</p><pre><code>// Some commentsline 1 of codeline 2 of codeline 3 of code</code></pre><p>Block code “fences”</p><pre><code>Sample text here...</code></pre><p>Syntax highlighting</p><pre><code class="js" lang="js">var foo = function (bar) {  return bar++;};console.log(foo(5));</code></pre><pre><code class="html" lang="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;</code></pre><pre><code class="objc" lang="objc">[[NSString alloc] initWithFormat:@&quot;I am No.%d&quot;, 1];</code></pre><h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>path to data files to supply the data that will be passed into templates.</td></tr><tr><td>engine</td><td>engine to be used for processing templates. Handlebars is the default.</td></tr><tr><td>ext</td><td>extension to be used for dest files.</td></tr></tbody></table><p>Right aligned columns</p><table><thead><tr><th align="right">Option</th><th align="right">Description</th></tr></thead><tbody><tr><td align="right">data</td><td align="right">path to data files to supply the data that will be passed into templates.</td></tr><tr><td align="right">engine</td><td align="right">engine to be used for processing templates. Handlebars is the default.</td></tr><tr><td align="right">ext</td><td align="right">extension to be used for dest files.</td></tr></tbody></table><h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><a href="https://github.com/objchris/hexo-theme-bookcase" target="_blank" rel="noopener">BOOKCASE</a></p><h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><p><img src="https://octodex.github.com/images/minion.png" alt="Minion"><br><img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat"></p><p>Like links, Images also have a footnote style syntax</p><p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p><p>With a reference later in the document defining the URL location:</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> test </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用文档</title>
-      <link href="/hexo-theme-bookcase/doc/using-advice-chinese/"/>
-      <url>/hexo-theme-bookcase/doc/using-advice-chinese/</url>
-      
-        <content type="html"><![CDATA[<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>BOOKCASE 有主题配置文件，其中有三项内容：</p><ul><li>root</li><li>indicate</li><li>search</li></ul><h3 id="root"><a href="#root" class="headerlink" title="root"></a>root</h3><p>指代左侧导航栏下方，作者名称对应的超链接</p><h3 id="indicate"><a href="#indicate" class="headerlink" title="indicate"></a>indicate</h3><p>读者首次进入网站后展示的第一个标签，该标签必须有对应的文章指定。若不指定，则读者首次进入网站时可以看到所有的文章</p><h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>是否开启站内搜索功能，当前的站内搜索功能集成的是 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a>。开启前请先按照 hexo-generator-search 进行配置</p><h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><ul><li>标签的置顶文章（将时间调整至100年后）做成这个标签所有文章的一个目录，这样做是为了使用手机的用户着想，因为在手机上操作，点击标签跳转到新页面默认是看不到文章列表的，此时有了目录，读者可以直接通过目录查看当前标签下有什么文章，自然就舒服多了。</li></ul><h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul><li>About 页面，用于展示个人信息</li><li>评论</li><li>国际化</li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> doc </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Document</title>
-      <link href="/hexo-theme-bookcase/doc/using-advice/"/>
-      <url>/hexo-theme-bookcase/doc/using-advice/</url>
-      
-        <content type="html"><![CDATA[<h2 id="bookcase-config-yml"><a href="#bookcase-config-yml" class="headerlink" title="bookcase/_config.yml"></a>bookcase/_config.yml</h2><p>There are 3 config items in <code>bookcase/_config.yml</code>：</p><ul><li>root</li><li>indicate</li><li>search</li></ul><h3 id="root"><a href="#root" class="headerlink" title="root"></a>root</h3><p>the link of the author name at the bottom of sidebar.</p><h3 id="indicate"><a href="#indicate" class="headerlink" title="indicate"></a>indicate</h3><p>The first tag displayed by readers after entering the site for the first time, the tag must be specified by the corresponding article. Without configuration, readers can see all articles when they first enter the website.</p><h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>Whether to enable the site search function. The current site search function is integrated with <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a>. Please configure according to <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> before getting start.</p><h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul><li>About page</li><li>Comment</li><li>i18n</li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> doc </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开始</title>
-      <link href="/hexo-theme-bookcase/doc/get-start-chinese/"/>
-      <url>/hexo-theme-bookcase/doc/get-start-chinese/</url>
-      
-        <content type="html"><![CDATA[<p>BOOKCASE 是一个简洁，Gitbook 风格的 Hexo 主题</p><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><ul><li>Preview</li><li>Features</li><li>Quick start</li><li>ChangeLog</li><li>License</li></ul><h2 id="Preview"><a href="#Preview" class="headerlink" title="Preview"></a>Preview</h2><ul><li><a href="http://objchris.com/hexo-theme-bookcase/">demo</a></li></ul><h2 id="Feature"><a href="#Feature" class="headerlink" title="Feature"></a>Feature</h2><ul><li>Gitbook 风格</li><li>适配 PC 和移动设备界面</li><li>暗夜模式</li><li>站内搜索功能 By <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a></li></ul><h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2><ol><li>进入到 Hexo 的目录<pre><code class="bash" lang="bash">cd &lt;your_blog_dir&gt;</code></pre></li><li>从 Github 上 clone BOOKCASE<pre><code class="bash" lang="bash">git clone https://github.com/objchris/hexo-theme-bookcase themes/bookcase</code></pre></li><li>修改根路径下的 <code>_config.yml</code> ，将主题改为 bookcase<pre><code>theme: bookcase</code></pre></li><li>按照<a href="../using-advice-chinese">文档</a>配置主题</li></ol><h2 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h2><h3 id="2020-01-14"><a href="#2020-01-14" class="headerlink" title="2020-01-14"></a>2020-01-14</h3><p>第一个版本</p><h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p><a href="https://github.com/objchris/hexo-theme-bookcase/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a>.</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> doc </tag>
-            
-        </tags>
       
     </entry>
     
@@ -125,12 +133,14 @@
         <content type="html"><![CDATA[<p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p><p>Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.</p><p>But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the Negro is still languished in the corners of American society and finds himself an exile in his own land. And so we’ve come here today to dramatize a shameful condition.</p><p>In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was a promise that all men, yes, black men as well as white men, would be guaranteed the “unalienable Rights” of “Life, Liberty and the pursuit of Happiness.” It is obvious today that America has defaulted on this promissory note, insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check, a check which has come back marked “insufficient funds.”</p><p>But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. And so, we’ve come to cash this check, a check that will give us upon demand the riches of freedom and the security of justice.</p><p>We have also come to this hallowed spot to remind America of the fierce urgency of Now. This is no time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism. Now is the time to make real the promises of democracy. Now is the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice a reality for all of God’s children.</p><p>It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the Negro’s legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end, but a beginning. And those who hope that the Negro needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual. And there will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice emerges.</p><p>But there is something that I must say to my people, who stand on the warm threshold which leads into the palace of justice: In the process of gaining our rightful place, we must not be guilty of wrongful deeds. Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our creative protest to degenerate into physical violence. Again and again, we must rise to the majestic heights of meeting physical force with soul force.</p><p>The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all white people, for many of our white brothers, as evidenced by their presence here today, have come to realize that their destiny is tied up with our destiny. And they have come to realize that their freedom is inextricably bound to our freedom.</p><p>We cannot walk alone.</p><p>And as we walk, we must make the pledge that we shall always march ahead.</p><p>We cannot turn back.</p><p>There are those who are asking the devotees of civil rights, “When will you be satisfied?” We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality. We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities. We cannot be satisfied as long as the negro’s basic mobility is from a smaller ghetto to a larger one. We can never be satisfied as long as our children are stripped of their self-hood and robbed of their dignity by signs stating: “For Whites Only.” We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote. No, no, we are not satisfied, and we will not be satisfied until “justice rolls down like waters, and righteousness like a mighty stream.”</p><p>I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have come fresh from narrow jail cells. And some of you have come from areas where your quest – quest for freedom left you battered by the storms of persecution and staggered by the winds of police brutality. You have been the veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive. Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation can and will be changed.</p><p>Let us not wallow in the valley of despair, I say to you today, my friends.</p><p>And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.</p><p>I have a dream that one day this nation will rise up and live out the true meaning of its creed: “We hold these truths to be self-evident, that all men are created equal.”</p><p>I have a dream that one day on the red hills of Georgia, the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.</p><p>I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.</p><p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</p><p>I have a dream today!</p><p>I have a dream that one day, down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of “interposition” and “nullification” – one day right there in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.</p><p>I have a dream today!</p><p>I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight; “and the glory of the Lord shall be revealed and all flesh shall see it together.”</p><p>This is our hope, and this is the faith that I go back to the South with.</p><p>With this faith, we will be able to hew out of the mountain of despair a stone of hope. With this faith, we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith, we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.</p><p>And this will be the day – this will be the day when all of God’s children will be able to sing with new meaning:</p><blockquote><p>My country ‘tis of thee, sweet land of liberty, of thee I sing.<br>Land where my fathers died, land of the Pilgrim’s pride,<br>From every mountainside, let freedom ring!<br>And if America is to be a great nation, this must become true.</p></blockquote><p>And so let freedom ring from the prodigious hilltops of New Hampshire.</p><blockquote><p>Let freedom ring from the mighty mountains of New York.<br>Let freedom ring from the heightening Alleghenies of Pennsylvania.<br>Let freedom ring from the snow-capped Rockies of Colorado.<br>Let freedom ring from the curvaceous slopes of California.</p></blockquote><p>But not only that:</p><blockquote><p>Let freedom ring from Stone Mountain of Georgia.<br>Let freedom ring from Lookout Mountain of Tennessee.<br>Let freedom ring from every hill and molehill of Mississippi.<br>From every mountainside, let freedom ring.</p></blockquote><p>And when this happens, and when we allow freedom ring, when we let it ring from every village and every hamlet, from every state and every city, we will be able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:</p><p>Free at last! Free at last!</p><p>Thank God Almighty, we are free at last!</p>]]></content>
       
       
+      <categories>
+          
+          <category> test </category>
+          
+          <category> language </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> test </tag>
-            
-        </tags>
       
     </entry>
     

@@ -149,52 +149,52 @@ table>thead>tr>th {
 #container .sidebar header .title span {
   margin: 1rem 1rem;
 }
-#container .sidebar header .tags-container {
+#container .sidebar header .categories-container {
   background-color: var(--color-container-bg);
   margin: 1rem 1rem;
   border-radius: 6px;
   text-align: center;
 }
-#container .sidebar header .tags-container .tags-header {
+#container .sidebar header .categories-container .categories-header {
   text-align: right;
   padding: 1em 1em 0;
 }
-#container .sidebar header .tags-container .tags {
+#container .sidebar header .categories-container .categories {
   margin: 0.5rem 1rem;
   display: flex;
   overflow-x: scroll;
 }
-#container .sidebar header .tags-container .tags::-webkit-scrollbar {
+#container .sidebar header .categories-container .categories::-webkit-scrollbar {
   display: none;
 }
-#container .sidebar header .tags-container .tags .tag {
+#container .sidebar header .categories-container .categories .category {
   position: relative;
   padding: 1rem 0 1.25rem;
   min-width: 34%;
   border-radius: 6px;
   color: var(--color-text);
 }
-#container .sidebar header .tags-container .tags .tag span {
+#container .sidebar header .categories-container .categories .category span {
   display: block;
   margin: 0 0.5rem;
 }
-#container .sidebar header .tags-container .tags .tag span:first-child {
+#container .sidebar header .categories-container .categories .category span:first-child {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
-#container .sidebar header .tags-container .tags .tag span:last-child {
+#container .sidebar header .categories-container .categories .category span:last-child {
   font-size: 0.75rem;
   opacity: 0.63;
 }
-#container .sidebar header .tags-container .tags .tag:hover::after,
-#container .sidebar header .tags-container .tags .tag:focus::after,
-#container .sidebar header .tags-container .tags .tag:active::after {
+#container .sidebar header .categories-container .categories .category:hover::after,
+#container .sidebar header .categories-container .categories .category:focus::after,
+#container .sidebar header .categories-container .categories .category:active::after {
   transform: scaleX(1);
 }
-#container .sidebar header .tags-container .tags .tag.highlight:after {
+#container .sidebar header .categories-container .categories .category.highlight:after {
   transform: scaleX(1);
 }
-#container .sidebar header .tags-container .tags .tag:after {
+#container .sidebar header .categories-container .categories .category:after {
   background-color: var(--color-text);
   position: absolute;
   right: 0px;
@@ -213,7 +213,6 @@ table>thead>tr>th {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
-  width: 320px;
 }
 #container .sidebar section .posts::-webkit-scrollbar {
   display: none;
@@ -221,17 +220,20 @@ table>thead>tr>th {
 #container .sidebar section .posts .nav {
   -webkit-tap-highlight-color: transparent;
   user-select: none;
-  width: 300px;
+}
+#container .sidebar section .posts .nav .sub-category {
+  margin: 0.618rem 0 0.618rem 1rem;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
 }
 #container .sidebar section .posts .nav a.post-title {
   color: var(--color-text);
-  font-weight: 900;
   position: relative;
   display: block;
-  padding-right: 2rem;
-  text-align: right;
+  margin: 0 0 0 2rem;
   text-transform: capitalize;
-  line-height: 3rem;
+  line-height: 2.618rem;
   border-color: inherit;
   transition: all 0.15s;
 }
