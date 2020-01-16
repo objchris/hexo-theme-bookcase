@@ -1,5 +1,5 @@
 # BOOKCASE
-![](https://img.shields.io/badge/Release-v1.0.0-green.svg?style=flat)
+![](https://img.shields.io/badge/Release-v1.1.0-green.svg?style=flat)
 ![](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
 
 📚 A clean, Gitbook style theme for HEXO. 
